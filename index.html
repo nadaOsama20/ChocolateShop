@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- ===== Header ===== -->
+    <header class="navbar">
+        <div class="logo">Chocolate<span>Shop</span></div>
+        <ul class="items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="btn buy-btn">Gift Builder</button></li>
+        </ul>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <!-- ===== Main ===== -->
+    <section class="main" id="home">
+        <div class="main-heading">
+            <p class="para">Chocolate products</p>
+            <h1 class="heading">Dark Chocolate</h1>
+            <p class="mid-para">Premium handmade chocolates with love and passion. Taste the difference of real cocoa crafted into perfection.</p>
+            <button class="btn btn1">Details</button>
+        </div>
+    </section>
+
+
+
+    <!-- ===== Story ===== -->
+    <section class="sec" id="story">
+        <p class="para">Since 2021</p>
+        <h1 class="heading">Our Story</h1>
+        <div class="row">
+            <div class="boxes">
+                <h1>Chocolate with the Story</h1>
+                <p class="mid-para">We started with a small kitchen and a big dream — to create the finest chocolate from natural ingredients. Our journey is about quality, passion, and sharing sweetness with the world.</p>
+                <button class="btn btn1">History</button>
+            </div>
+            <div class="img"><img src="img/pic3.jpg" alt="Our story image"></div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ===== Products ===== -->
+    <section class="sec" id="products">
+        <p class="para">Our Collection</p>
+        <h1 class="heading">Products</h1>
+        <div class="row">
+            <!-- المنتجات الأصلية -->
+            <div class="box p-box">
+                <img src="img/prod1.jpeg" alt="">
+                <h2>Dark Delight</h2>
+                <p>$10</p>
+                <button class="btn btn1">Add to Cart</button>
+            </div>
+            <div class="box p-box">
+                <img src="img/prod3.jpeg" alt="">
+                <h2>White Dream</h2>
+                <p>$9</p>
+                <button class="btn btn1">Add to Cart</button>
+            </div>
+            <div class="box p-box">
+                <img src="img/prod2.jpeg" alt="">
+                <h2>Milk Classic</h2>
+                <p>$8</p>
+                <button class="btn btn1">Add to Cart</button>
+            </div>
+
+            <!-- منتجات إضافية -->
+            <div class="box p-box">
+                <img src="img/prod4.jpeg" alt="">
+                <h2>Hazelnut </h2>
+                <p>$11</p>
+                <button class="btn btn1">Add to Cart</button>
+            </div>
+            <div class="box p-box">
+                <img src="img/prod5.jpeg" alt="">
+                <h2>Caramel Kiss</h2>
+                <p>$10</p>
+                <button class="btn btn1">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- ===== Offer Countdown ===== -->
+        <section class="offer-timer">
+            <h2 class="heading">Limited Offer!</h2>
+            <p class="para">Get 20% off — ends in:</p>
+            <div id="countdown"></div>
+        </section>
+    </section>
+
+    <!-- ===== Mood Selector ===== -->
+    <div class="modal" id="moodModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="moodResult"></div>
+        </div>
+    </div>
+    <section class="sec" id="mood">
+        <p class="para">Choose Your Mood</p>
+        <h1 class="heading">What's Your Feeling?</h1>
+        <div class="mood-buttons">
+            <button class="btn mood-btn" data-mood="happy">joy</button>
+            <button class="btn mood-btn" data-mood="calm">quiet</button>
+            <button class="btn mood-btn" data-mood="love">love</button>
+        </div>
+        <div class="mood-result" id="moodResult"></div>
+    </section>
+
+    <!-- ===== Comments ===== -->
+    <section class="comments sec">
+        <p class="para">Top Comments</p>
+        <h1 class="heading">Reviews</h1>
+        <div class="row">
+            <div class="box c-box">
+                <p>The best chocolate I’ve ever tasted. Rich, smooth, and delicious.</p>
+                <h3>Alina</h3>
+            </div>
+            <div class="box c-box">
+                <p>Perfect gift idea. My family loved it. Highly recommended.</p>
+                <h3>Ali</h3>
+            </div>
+            <div class="box c-box">
+                <p>Fresh taste and beautiful packaging. Worth every penny.</p>
+                <h3>Anaya</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="sec contact" id="contact">
+        <div class="contact-box">
+            <p class="para">Contact Us</p>
+            <h1 class="heading">Get in Touch</h1>
+            <div class="icons">
+                <div><i class="fab fa-facebook"></i></div>
+                <div><i class="fab fa-instagram"></i></div>
+                <div><i class="fab fa-whatsapp"></i></div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+    <!-- ===== Gift Builder Modal ===== -->
+    <div class="modal" id="giftModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Build Your Gift Box</h2>
+            <form class="gift-form">
+                <input type="text" placeholder="Recipient Name" required>
+                <input type="email" placeholder="Recipient Email" required>
+                <select required>
+        <option value="">Select Chocolate Type</option>
+        <option value="dark">Dark Chocolate</option>
+        <option value="milk">Milk Chocolate</option>
+        <option value="white">White Chocolate</option>
+      </select>
+                <select required>
+        <option value="">Choose Packaging</option>
+        <option value="classic">Classic Wrap</option>
+        <option value="festive">Festive Box</option>
+        <option value="minimal">Minimal Style</option>
+      </select>
+                <textarea placeholder="Write a message..." rows="3"></textarea>
+                <button type="submit" class="btn">Send Gift</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>&copy; 2025 Chocolate Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
